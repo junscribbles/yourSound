@@ -1,0 +1,17 @@
+:root, body, header, section, article, footer, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-main: #F2A71B;
+    --clr-second: #025E73;
+    --clr-back: #BFB78F;
+    --clr-alt: #A5A692;
+    --clr-black: #011F26;
+
+    color: var(--clr-black);
+    background-color: var(--clr-alt);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
