@@ -3,15 +3,24 @@
     padding: 0;
 }
 
+/* mit "--" können in CSS Variablen erstellt werden. Im Verlauf des Codes kann dann mit var() auf diese zurückgegriffen werden.
+Durch die relative Farbe kann das Color-Scheme auch am Ende des Projektes noch einfach angepasst werden. */
+
 :root {
     --clr-main: #F2A71B;
     --clr-second: #025E73;
     --clr-back: #BFB78F;
-    --clr-alt: #A5A692;
+    --clr-alt: #e8e8e8;
     --clr-black: #011F26;
 
     color: var(--clr-black);
     background-color: var(--clr-alt);
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 30vh;
+    background-color: var(--clr-main);
 }
