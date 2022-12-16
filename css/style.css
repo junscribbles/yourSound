@@ -19,6 +19,33 @@ Durch die relative Farbe kann das Color-Scheme auch am Ende des Projektes noch e
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1 {
-    color: var(--clr-black);
+header {
+    width: 100%;
+    height: 30vh;
+    background-color: var(--clr-main);
+}
+
+
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--clr-second);
+
+    position: absolute;
+    bottom: 0;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#menu li {
+    width: 33%;
+    list-style: none;
+
+    text-align: center;
+    color: var(--clr-alt);
 }
