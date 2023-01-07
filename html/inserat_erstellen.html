@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,28 +27,23 @@
         <h2>Inserat erstellen</h2>
 
         <!-- Hier können die Inhalte fürs Erstellen der Inserate erstellt werden -->
-        
+
         <!-- Name, Alter, Talent-->
 
-        <label for="name">Name</label> <br>
-        <input id="name" type="text" value=""> <br>
+        <label for="title">Titel</label> <br>
+        <input id="title" type="text" value=""> <br>
 
-        <label for="talent">Talent</label> <br>
-        <input id="talent" type="text" value=""> <br>
+        <label for="detail">Beschreibung</label> <br>
+        <textarea id="detail" rows="4" cols="50"></textarea> <br>
 
-        <label for="alter">Dein Alter:</label>
+        <label for="image">Bild</label> <br>
+        <input id="image" type="text" value=""> <br>
 
-        <select name="alter" id="alter">
-            <option value="sehr jung">15 - 18 Jahre alt</option>
-            <option value="jung">19 - 25 Jahre alt</option>
-            <option value="mittel">26 - 40 Jahre alt</option>
-            <option value="alt">41 Jahre oder älter</option>
-        </select>
         <br>
 
         <!-- Ort -->
-        <label for="Ort">Wo wohnst du?</label>
-        <select name="Ort" id="Ort">
+        <label for="city">Wo wohnst du?</label>
+        <select name="city" id="city">
             <option value="Bern">Bern</option>
             <option value="Zürich">Zürich</option>
             <option value="Luzern">Luzern</option>
@@ -57,13 +53,8 @@
 
         <!-- Zeitraum -->
 
-        <label for="Zeit">Welche Zeit geht dir am besten?</label> <br>
+        <label for="zeit">Welche Zeit geht dir am besten?</label> <br>
         <input id="zeit" type="text" value=""> <br>
-
-        <!-- Kontakt -->
-
-        <label for="Nummer">Deine Telefonnummer</label> <br>
-        <input id="Nummer" type="Text" value=""> <br>
 
         <!-- Radio Button -->
 
@@ -71,37 +62,36 @@
             <legend>Anbieten oder suchen?</legend>
         
             <div>
-              <input type="radio" id="anbieten" name="Frage" value="anbieten"
+              <input type="radio" id="anbieten" name="Frage" value="0"
                      checked>
               <label for="anbieten">anbieten</label>
             </div>
         
             <div>
-              <input type="radio" id="finden" name="Frage" value="finden">
-              <label for="finden">finden</label>
+              <input type="radio" id="suchen" name="Frage" value="1">
+              <label for="suchen">suchen</label>
             </div>
 
         </fieldset>
 
     </main>
 
+    <div id="nachricht"></div>
+
 
     <!-- Menu sollte so schon okay sein :) -->
     <footer>
         <div id="menu">
             <a href="../index.html">
-                <button>Start</button>
+                <button>Zurück</button>
             </a>
             <a href="">
-                <button>Erstellen</button>
-            </a>
-            <a href="mein_profil.html">
-                <button>Profil</button>
+                <button onclick="neuesAdvert()">Veröffentlichen</button>
             </a>
         </div>
     </footer>
     
-
+    <script src="../js/inserat.js"></script>
     
 </body>
 </html>
