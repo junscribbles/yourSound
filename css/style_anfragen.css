@@ -1,0 +1,55 @@
+:root {
+    --clr-main: #F2A71B;
+    --clr-second: #025E73;
+    --clr-back: #BFB78F;
+    --clr-alt: #e8e8e8;
+    --clr-black: #011F26;
+
+    color: var(--clr-black);
+    background-color: var(--clr-alt);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    height: 15vh;
+    padding-top: 3vh;
+}
+
+.request {
+    margin-top: 2rem;
+    padding: 0.7rem;
+
+    border: 1.5px solid black;
+    border-radius: 0.2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button {
+    margin-left: 0.7rem;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--clr-second);
+    color: var(--clr-alt);
+}
+
+.buttons button:first-child {
+    background-color: var(--clr-main);
+    color: var(--clr-black);
+}
+
+.buttons button:hover {
+    background-color: var(--clr-back);
+    color: var(--clr-black);
+}
+
+h3 {
+    margin-bottom: 0.2em;
+}

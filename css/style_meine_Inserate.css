@@ -15,24 +15,3 @@ header {
     height: 15vh;
     padding-top: 3vh;
 }
-
-#actions {
-    display: flex;
-    flex-direction: column;
-
-    position: fixed;
-    bottom: 10vh;
-}
-
-#actions button {
-    margin-left: -1rem;
-    width: 100vw;
-
-    font-size: 1.1rem;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-
-    border: none;
-    border-top: 1.5px solid black;
-
-}

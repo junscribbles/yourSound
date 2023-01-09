@@ -16,23 +16,14 @@ header {
     padding-top: 3vh;
 }
 
-#actions {
-    display: flex;
-    flex-direction: column;
+.denied {
+    margin-top: 2rem;
+    padding: 0.7rem;
 
-    position: fixed;
-    bottom: 10vh;
+    border: 1.5px solid black;
+    border-radius: 0.2rem;
 }
 
-#actions button {
-    margin-left: -1rem;
-    width: 100vw;
-
-    font-size: 1.1rem;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-
-    border: none;
-    border-top: 1.5px solid black;
-
+h3 {
+    margin-bottom: 0.2em;
 }

@@ -32,8 +32,8 @@ if ($erfolg) {
 function pruefepassword($userPassword, $dbPassword, $userID)
 {
 
-    // if (password_verify($userPassword, $dbPassword)) {
-    if ($userPassword == $dbPassword) {
+    if (password_verify($userPassword, $dbPassword)) {
+    // if ($userPassword == $dbPassword) {
 
         erstelleToken($userID);
 
