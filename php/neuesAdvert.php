@@ -26,6 +26,7 @@ if ($erfolg) {
     // print_r('WG erfolgreich erstellt!');
 
     // $letzteID = $pdo->lastInsertId();
+    
 
     print_r("Inserat erflogreich erstellt!");
 
