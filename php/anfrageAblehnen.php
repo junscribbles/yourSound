@@ -29,4 +29,25 @@ if ($erfolg) {
     $jsonArray = json_encode($array);
 
     print_r($jsonArray);
+} else {
+
+    $sql = "
+    DELETE FROM request
+    WHERE request.userId = '$userID'
+    AND request.requestId = '$requestID';
+    ";
+
+    $stmt = $pdo->prepare($sql);
+
+    $erfolg = $stmt->execute();
+
+    if ($erfolg) {
+
+        $array = $stmt->fetchAll();
+    
+        $jsonArray = json_encode($array);
+    
+        print_r($jsonArray);
+        
+    }
 }

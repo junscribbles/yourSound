@@ -6,11 +6,9 @@ require("autorisieren.php");
 $userID = $_POST["userID"];
 
 $sql = "
-SELECT advert.title, advert.detail, advert.image, advert.city, advert.time, advert.type, advert.id, advert.userId, user.name, user.email
+SELECT advert.title, advert.detail, advert.image, advert.city, advert.time, advert.type, advert.short, advert.id, advert.userId
 FROM advert
-INNER JOIN user
-ON user.id = advert.userId
-WHERE NOT user.id = '$userID'
+WHERE advert.userId = '$userID'
 ORDER BY advert.timestamp DESC;
 ";
 

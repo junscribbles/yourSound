@@ -41,8 +41,10 @@ function neuesAdvert() {
         })
         .then((data) => {
 
-            console.log(data);
-            document.querySelector('#nachricht').innerHTML = data;
+            // console.log(data);
+            // document.querySelector('#nachricht').innerHTML = data;
+
+            window.location = 'meine_Inserate.html';
 
         })
 }

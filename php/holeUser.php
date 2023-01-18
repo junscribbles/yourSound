@@ -5,7 +5,7 @@ require("autorisieren.php");
 
 $userID = $_POST["userID"];
 
-$sql = "SELECT name FROM user WHERE ID = $userID";
+$sql = "SELECT * FROM user WHERE ID = $userID";
 
 $stmt = $pdo->prepare($sql);
 

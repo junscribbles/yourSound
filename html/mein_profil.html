@@ -28,7 +28,24 @@
         <!-- Hier können die Inhalte fürs Profil erstellt werden -->
 
         <div id="myData">
+            <div>
+                <label for=""> Name</label> <br>
+                <input type="name" id="name"> <br>
 
+                <label for=""> Jahrgang</label> <br>
+                <input type="year" id="year"> <br>
+
+                <label for=""> E-Mail Adresse</label> <br>
+                <input type="email" id="email"> <br>
+
+                <label for=""> Passwort</label> <br>
+                <input type="password" id="password" placeholder="Neues Passwort definieren"> <br> <br>
+
+                <button class="update" onclick="updateProfile()">Profil aktualisieren</button>
+                <button class="delete" onclick="askDelete()">Profil löschen</button>
+
+                <p id="nachricht"> </p>
+            </div>
         </div>
 
         <div id="actions">
@@ -43,6 +60,9 @@
             </a>
             <a href="meine_Inserate.html">
                 <button>Meine Inserate</button>
+            </a>
+            <a href="">
+                <button onclick="logout()">Logout</button>
             </a>
         </div>
 

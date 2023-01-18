@@ -15,3 +15,16 @@ header {
     height: 15vh;
     padding-top: 3vh;
 }
+
+.advert button {
+    width: 18ch;
+}
+
+button.edit {
+    background-color: rgb(58, 127, 58);
+    margin-right: 1rem;
+}
+
+button.delete {
+    background-color: rgb(184, 54, 54);
+}

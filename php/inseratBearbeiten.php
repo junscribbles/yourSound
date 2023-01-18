@@ -4,14 +4,11 @@ require("config.php");
 require("autorisieren.php");
 
 $userID = $_POST["userID"];
+$advertID = $_POST["advertID"];
 
 $sql = "
-SELECT advert.title, advert.detail, advert.image, advert.city, advert.time, advert.type, advert.id, advert.userId, user.name, user.email
-FROM advert
-INNER JOIN user
-ON user.id = advert.userId
-WHERE NOT user.id = '$userID'
-ORDER BY advert.timestamp DESC;
+SELECT * FROM advert
+WHERE id = '$advertID';
 ";
 
 $stmt = $pdo->prepare($sql);

@@ -16,6 +16,53 @@ header {
     padding-top: 3vh;
 }
 
+#myData {
+    background: var(--clr-second);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 1.5rem;
+    margin-top: 1rem;
+
+    color: var(--clr-alt);
+}
+
+input {
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+#myData button {
+    border: var(--clr-alt);
+    border-radius: 0.2rem;
+
+    display: inline;
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--clr-alt);
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+#myData button:hover {
+    background-color: var(--clr-back);
+    color: var(--clr-second);
+}
+
+button.update {
+    background-color: var(--clr-main);
+}
+
+button.delete {
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+
+    background-color: rgb(184, 54, 54);
+}
+
+#nachricht {
+    margin-top: 0.2rem;
+}
+
 #actions {
     display: flex;
     flex-direction: column;
@@ -28,11 +75,15 @@ header {
     margin-left: -1rem;
     width: 100vw;
 
-    font-size: 1.1rem;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    font-size: 1rem;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 
     border: none;
     border-top: 1.5px solid black;
 
+}
+
+#actions button:hover {
+    background-color: var(--clr-back);
 }

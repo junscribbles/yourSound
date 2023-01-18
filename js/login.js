@@ -3,7 +3,7 @@ function login() {
     let email = document.querySelector("#email").value;
     let password = document.querySelector("#password").value;
 
-    console.log(email + password);
+    // console.log(email + password);
 
     let formData = new FormData();
     formData.append('email', email);
@@ -22,7 +22,7 @@ function login() {
         })
         .then((data) => {
 
-            console.log(data);
+            // console.log(data);
             document.querySelector('#nachricht').innerHTML = data[0];
 
             localStorage.setItem("userID", data[1]);

@@ -12,7 +12,7 @@
     <!-- Folgendes CSS passt den Standard-Style auf die Profil-Seite an: -->
     <link rel="stylesheet" href="../css/style_erstellen.css">
 
-    <title>Your Sound - Inserat erstellen</title>
+    <title>Your Sound - Inserat bearbeiten</title>
 </head>
 
 <body>
@@ -24,11 +24,9 @@
     </header>
 
     <main>
-        <h2>Inserat erstellen</h2>
+        <h2>Inserat bearbeiten</h2>
 
         <!-- Hier können die Inhalte fürs Erstellen der Inserate erstellt werden -->
-
-        <!-- Name, Alter, Talent-->
 
         <label for="title">Titel</label> <br>
         <input id="title" type="text" value=""> <br>
@@ -75,25 +73,25 @@
 
         </fieldset>
 
-        <div id="nachricht"></div>
-
     </main>
+
+    <div id="nachricht"></div>
 
 
     <!-- Menu sollte so schon okay sein :) -->
     <footer>
         <div id="menu">
-            <a href="../index.html">
+            <a href="meine_Inserate.html">
                 <button>Zurück</button>
             </a>
-            <a onclick="neuesAdvert()">
-                <button>Veröffentlichen</button>
+            <a onclick="updateAdvert()">
+                <button>Update</button>
             </a>
 
         </div>
     </footer>
     
-    <script src="../js/inserat.js"></script>
+    <script src="../js/inserat_bearbeiten.js"></script>
     
 </body>
 </html>
